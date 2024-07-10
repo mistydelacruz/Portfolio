@@ -24,11 +24,10 @@
   padding-top: 20px;
   padding-left: 20px;
   border-left: 25%;
-  background-color: blueviolet;
 }
 
 .left-index {
-  background-color: rgb(236, 207, 79);
+  background-color: rgb(184, 142, 224);
   border-radius: 10px;
 }
 
@@ -56,10 +55,20 @@ button {
   display: inline-block;
 }
 
-.right {
+.right-index {
   right: 0;
-  top: 15%;
-  bottom: 20%;
+  left: 50%;
+  width: 45%;
+  height: 90%;
+  background-color: rgb(77, 132, 176);
+}
+
+.right-content {
+  text-align: center;
+  position: absolute;
+  width: 95%;
+  height: 95%;
+  background-color: rgb(35, 11, 109);
 }
 
 /* button {
