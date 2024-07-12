@@ -31,6 +31,8 @@
   left: 2%;
   width: 45%;
   height: 90%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .right {
@@ -38,18 +40,21 @@
   left: 50%;
   width: 45%;
   height: 90%;
+  display: flex;
+  flex-wrap: wrap;
   background-color: rgb(77, 132, 176);
 }
 
-/*** MENU PAGE STYLES ***/
+/***************************************
+            MENU PAGE STYLES 
+***************************************/
 
 .left-content-menu {
   width: 92%;
-  height: 90%;
-  /* text-align: center; */
-  display: block;
+  height: fit-content;
   padding-right: 30px;
   background-color: beige;
+  padding-bottom: 7%;
 }
 
 .right-content-menu {
@@ -60,12 +65,22 @@
   background-color: rgb(35, 11, 109);
 }
 
+.nav {
+  text-align: center;
+}
+
+.close {
+  height: 50px;
+  /* background-color: aqua; */
+  margin-left: 96.8%;
+}
+
 h1 {
   color: black;
   width: 104.7%;
-  padding-top: 50px;
+  padding-top: 10px;
   padding-bottom: 30px;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
 }
 
 ul {
@@ -73,7 +88,7 @@ ul {
   padding: 15px;
   text-align: center;
   width: 100%;
-  background-color: bisque;
+  /* background-color: bisque; */
 }
 
 button {
@@ -82,20 +97,7 @@ button {
   border-radius: 25px;
   padding: 10px;
   display: inline-block;
-}
-
-.close {
-  height: 50px;
-  right: 0;
-  background-color: aqua;
-  text-align: right;
-  margin-left: auto;
-}
-
-@media (max-width: 600px) {
-  .left-content-menu {
-    flex-direction: column;
-  }
+  cursor: pointer;
 }
 
 /*** ABOUT PAGE STYLES ***/
@@ -103,6 +105,12 @@ button {
 .left-content-about {
   text-align: center;
   background-color: aqua;
+}
+
+@media (max-width: 600px) {
+  .left-content-menu {
+    flex-direction: column;
+  }
 }
 
 /* button {
