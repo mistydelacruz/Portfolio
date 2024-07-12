@@ -17,7 +17,7 @@
   height: 60%;
   width: 40%;
   left: 5%;
-  top: 10%;
+  top: 5%;
   position: fixed;
   z-index: 1;
   overflow-x: hidden;
@@ -29,17 +29,40 @@
 .left-index {
   background-color: rgb(184, 142, 224);
   border-radius: 10px;
+  width: 35%;
+  height: 50%;
+  text-align: center;
+  padding-right: 80px;
+  flex-wrap: wrap;
 }
 
 .left-content {
-  width: 91%;
+  top: 0;
+  width: 105%;
   height: 90%;
   text-align: center;
   padding-right: 5%;
 }
 
+.right-index {
+  right: 0;
+  left: 50%;
+  width: 45%;
+  height: 90%;
+  flex-wrap: wrap;
+  background-color: rgb(77, 132, 176);
+}
+
+.right-content {
+  text-align: center;
+  position: absolute;
+  width: 95%;
+  height: 95%;
+  background-color: rgb(35, 11, 109);
+}
+
 h1 {
-  padding-top: 10%;
+  padding-top: 0;
   padding-bottom: 5%;
 }
 
@@ -53,22 +76,6 @@ button {
   border-radius: 25px;
   padding: 10px;
   display: inline-block;
-}
-
-.right-index {
-  right: 0;
-  left: 50%;
-  width: 45%;
-  height: 90%;
-  background-color: rgb(77, 132, 176);
-}
-
-.right-content {
-  text-align: center;
-  position: absolute;
-  width: 95%;
-  height: 95%;
-  background-color: rgb(35, 11, 109);
 }
 
 /* button {
