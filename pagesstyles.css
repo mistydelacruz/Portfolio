@@ -1,5 +1,20 @@
+/***************************************
+ * Created by: Misty Dela Cruz
+ * Created on: 6/26/2024
+ * Last Modified: 7/12/2024
+ * Updates:
+ * Finished styling the Menu page
+ ***************************************/
+
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Tiny5&display=swap");
+
+body,
+button {
+  font-family: "Silkscreen", sans-serif;
+}
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
   line-height: 1.5;
   font-weight: 400;
 
@@ -17,7 +32,7 @@
   height: 60%;
   width: 40%;
   left: 5%;
-  top: 5%;
+  top: 0;
   position: fixed;
   z-index: 1;
   overflow-x: hidden;
@@ -27,41 +42,46 @@
 }
 
 .left {
-  background-color: rgb(39, 61, 170);
-  left: 2%;
+  background-color: #8ecff5;
+  left: 1%;
   width: 45%;
-  height: 90%;
+  height: 91%;
   display: flex;
   flex-wrap: wrap;
 }
 
 .right {
   right: 0;
-  left: 50%;
-  width: 45%;
-  height: 90%;
+  left: 49.5%;
+  width: 48%;
+  height: 91%;
   display: flex;
   flex-wrap: wrap;
   background-color: rgb(77, 132, 176);
 }
 
+.close {
+  height: 50px;
+  background-color: #ffffff;
+  margin-left: 96.8%;
+}
+
 /***************************************
-            MENU PAGE STYLES 
-***************************************/
+ *       MENU PAGE CONTENT STYLES      *
+ ***************************************/
 
 .left-content-menu {
   width: 92%;
   height: fit-content;
   padding-right: 30px;
-  background-color: beige;
+  background-color: #34729d;
   padding-bottom: 7%;
 }
 
 .right-content-menu {
   text-align: center;
-  position: absolute;
-  width: 95%;
-  height: 95%;
+  height: fit-content;
+  width: 96%;
   background-color: rgb(35, 11, 109);
 }
 
@@ -69,18 +89,16 @@
   text-align: center;
 }
 
-.close {
-  height: 50px;
-  /* background-color: aqua; */
-  margin-left: 96.8%;
-}
-
 h1 {
   color: black;
   width: 104.7%;
+  font-size: 3em;
   padding-top: 10px;
   padding-bottom: 30px;
-  /* background-color: aquamarine; */
+}
+
+h2 {
+  color: white;
 }
 
 ul {
@@ -88,24 +106,68 @@ ul {
   padding: 15px;
   text-align: center;
   width: 100%;
-  /* background-color: bisque; */
 }
 
 button {
-  color: rgb(40, 18, 119);
   font-size: 2em;
-  border-radius: 25px;
+  width: 65%;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  /* width: 100%;
+  color: black;
+  font-size: 2em;
+  border-radius: 15px;
   padding: 10px;
   display: inline-block;
   cursor: pointer;
+  background-color: #ffffff; */
 }
 
-/*** ABOUT PAGE STYLES ***/
+/***************************************
+ *       ABOUT PAGE CONTENT STYLES     *
+ ***************************************/
 
-.left-content-about {
+ .left-content-about {
+  width: 92%;
+  height: fit-content;
+  padding-right: 30px;
+  background-color: #34729d;
+  padding-bottom: 7%;
+}
+
+.right-content-about {
   text-align: center;
-  background-color: aqua;
+  height: fit-content;
+  width: 95%;
+  height: 95%;
+  background-color: rgb(35, 11, 109);
 }
+
+h1 {
+  color: black;
+  width: 104.7%;
+  font-size: 3em;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+h2 {
+  color: white;
+}
+
+/***************************************
+ *       ABOUT PAGE CONTENT STYLES     *
+ ***************************************/
 
 @media (max-width: 600px) {
   .left-content-menu {
