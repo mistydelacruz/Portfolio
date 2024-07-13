@@ -45,7 +45,7 @@ button {
   background-color: #8ecff5;
   left: 1%;
   width: 45%;
-  height: 91%;
+  height: 98%;
   display: flex;
   flex-wrap: wrap;
 }
@@ -54,7 +54,7 @@ button {
   right: 0;
   left: 49.5%;
   width: 48%;
-  height: 91%;
+  height: 98%;
   display: flex;
   flex-wrap: wrap;
   background-color: rgb(77, 132, 176);
@@ -72,10 +72,13 @@ button {
 
 .left-content-menu {
   width: 92%;
+  text-align: center;
   height: fit-content;
   padding-right: 30px;
   background-color: #34729d;
   padding-bottom: 7%;
+  outline: auto;
+  outline-color: #000;
 }
 
 .right-content-menu {
@@ -123,14 +126,18 @@ button {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  /* width: 100%;
-  color: black;
-  font-size: 2em;
-  border-radius: 15px;
-  padding: 10px;
-  display: inline-block;
-  cursor: pointer;
-  background-color: #ffffff; */
+}
+
+button:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  button {
+    padding: 0.25em 0.75em;
+  }
 }
 
 /***************************************
@@ -139,6 +146,7 @@ button {
 
  .left-content-about {
   width: 92%;
+  text-align: center;
   height: fit-content;
   padding-right: 30px;
   background-color: #34729d;
@@ -149,7 +157,6 @@ button {
   text-align: center;
   height: fit-content;
   width: 95%;
-  height: 95%;
   background-color: rgb(35, 11, 109);
 }
 
@@ -163,6 +170,14 @@ h1 {
 
 h2 {
   color: white;
+}
+
+.pic {
+  height: auto;
+  width: auto;
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 50%;
 }
 
 /***************************************
